@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.payments.PaymentMethodsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <View
+        android:id="@+id/view_out"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_05"/>
+
+    <TextView
+        android:id="@+id/tv_purchase"
+        android:layout_below="@+id/view_out"
+        android:layout_marginVertical="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/choose_your_payment_method"
+        android:textColor="@color/primary_color_01"
+        android:textSize="20sp" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_stroke"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic__paypal" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/paypal"
+            android:textColor="@color/primary_color_01"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic_round_right" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_marginHorizontal="16dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="5dp"-->
+<!--        android:elevation="10dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginHorizontal="16dp"-->
+<!--                android:src="@drawable/ic_apple" />-->
+
+<!--            <TextView-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:layout_marginRight="40dp"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:fontFamily="@font/bold"-->
+<!--                android:text="@string/apple_pay"-->
+<!--                android:textColor="@color/Dark_2"-->
+<!--                android:textSize="17sp" />-->
+
+<!--            <View-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:layout_marginRight="16dp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginVertical="10dp"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:src="@drawable/ic__google" />
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/google_pay"
+                android:textColor="@color/Dark_2"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:text="@string/continue_with_paypal"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

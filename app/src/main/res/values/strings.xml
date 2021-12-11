@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">PPC_App</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_connect_using">Or connect using</string>
+    <!--    welcome-->
+    <string name="text_welcome">Welcome to the PPC</string>
+    <string name="text_welcome_signin_ppc">Sign In to your PPC account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don’t have an account?</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="become_part_ppc">Become a PPC Member!</string>
+    <string name="full_name">Full Name</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_now">Sign In Now</string>
+    <string name="create_a_new_password">Create a New Password</string>
+    <string name="please_confirm_new_password">Please confirm your new password.</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="continue_to_purchase">Continue to Purchase</string>
+    <string name="view_membership_card">View Membership Card</string>
+    <string name="edit_membership_details">Edit Membership Details</string>
+    <string name="update_your_contact_details">Update Your Contact Details</string>
+    <string name="first_name">First Name</string>
+    <string name="james">James</string>
+    <string name="smith">Smith</string>
+    <string name="primary_email">Primary Email</string>
+    <string name="smithsmith_gmail_com">Smithsmith@gmail.com</string>
+    <string name="make_primary">Make Primary</string>
+    <string name="email_2">Email 2</string>
+    <string name="add_new_email">Add New Email</string>
+    <string name="opt_in_for_ppc_promotional_material">Opt-in for PPC promotional material</string>
+    <string name="primary_phone">Primary Phone</string>
+    <string name="phone_2">Phone 2</string>
+    <string name="addnewphone">Add New Phone</string>
+    <string name="add_line1">Address Line 1</string>
+    <string name="pacific_ave">2017 Pacific Ave</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="canada">Toronto, Canada</string>
+    <string name="addressline3">Address Line 3</string>
+    <string name="vancore">Vancore</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="_584215">584215</string>
+    <string name="cancel_changes">Cancel Changes</string>
+    <string name="save_details">Save Details</string>
+    <string name="my_membership">My Membership</string>
+    <string name="james_smith">James Smith</string>
+    <string name="_123456789">#123456789</string>
+    <string name="joined">Joined</string>
+    <string name="dec_25_2020">Dec 25 2020</string>
+    <string name="expiry">Expiry</string>
+    <string name="dec">Dec 24 2021</string>
+    <string name="address">Address</string>
+    <string name="_207_pacific_ave">207 Pacific Ave</string>
+    <string name="selkirk">Selkirk</string>
+    <string name="kdg">Ontario, K0G</string>
+    <string name="riding">Riding</string>
+    <string name="not_specified">Not Specified</string>
+    <string name="velocity">VELOCITY</string>
+    <string name="oneyearmem">1 Year Membership</string>
+    <string name="logout">Logout</string>
+    <string name="payments">payments</string>
+    <string name="purchases">Purchases</string>
+    <string name="donate_now">Donate Now</string>
+    <string name="_1_year_membership_purchase">1 Year Membership purchase</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="choose_your_payment_method">Choose Your Payment Method</string>
+    <string name="paypal">Paypal</string>
+    <string name="apple_pay">Apple Pay</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="continue_with_paypal">Continue With Paypal</string>
+    <string name="make_donation">Make Donation</string>
+    <string name="payment_gateway">Payment Gateway</string>
+    <string name="card_ending">Card ending</string>
+    <string name="change">Change</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="membership_purchase">Membership Purchase</string>
+    <string name="make_purchase">Make Purchase</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset Password</string>
+    <string name="enter_first_name">enter first name</string>
+    <string name="enter_last_name">enter last name</string>
+    <string name="enter_primary_email">enter primary email</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_phone_number">enter phone number</string>
+    <string name="enter_address">enter address</string>
+    <string name="enter_postal">enter postal code</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id">261824242160652</string>
+    <string name="fb_login_protocol_scheme">fb261824242160652</string>
+    <string name="last_name">Last Name</string>
+
+
+
+    <string name="field_required">Field is required</string>
+    <string name="wrong_email">Can\'t enter worng email.</string>
+    <string name="login_successfully">" Login Successfully"</string>
+    <string name="network_failure">Sorry! Not connected to internet</string>
+    <string name="please_select_plan">Please select membership plan</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="city">City</string>
+    <string name="enter_city">enter city</string>
+    <string name="province">Province</string>
+    <string name="enter_province">enter province</string>
+
+</resources>

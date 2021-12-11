@@ -1,0 +1,26 @@
+package com.codeinger.ppc_app.utils
+
+import android.app.Dialog
+import android.content.Context
+import android.os.Bundle
+import android.view.animation.Animation
+import android.view.animation.RotateAnimation
+import com.codeinger.ppc_app.R
+
+class CustomDialogProgress(context : Context) : Dialog(context) {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        this.window?.setBackgroundDrawableResource(android.R.color.transparent)
+        setContentView(R.layout.dialog_progress)
+        setCancelable(false)
+        setCanceledOnTouchOutside(false)
+        val rotate = RotateAnimation(
+                0f, 360f,
+                Animation.RELATIVE_TO_SELF, 0.5f,
+                Animation.RELATIVE_TO_SELF, 0.5f
+        )
+        rotate.duration = 1000
+        rotate.repeatCount = Animation.INFINITE
+    }
+    }
+

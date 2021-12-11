@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.payments.PaymentsFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/view_out"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_05"/>
+
+        <TextView
+            android:id="@+id/tv_purchase"
+            android:layout_below="@+id/view_out"
+            android:layout_marginVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/purchases"
+            android:textColor="@color/primary_color_01"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_05"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginVertical="8dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_purchase"/>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp">
+
+
+        <LinearLayout
+            android:id="@+id/tv_save_details"
+            android:background="@color/primary_color_04"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginVertical="12dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_undrawsaving"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:layout_marginRight="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Be the change we need - \nDonate to the PPC today!"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/primary_color_01"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@drawable/bg_btn"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/donate_now"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

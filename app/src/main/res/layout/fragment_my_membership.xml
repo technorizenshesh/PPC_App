@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.membership.MyMembershipFragment">
+
+
+    <View
+         android:id="@+id/view_out"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_05"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_main"
+        android:layout_below="@id/view_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp">
+
+
+        <LinearLayout
+            android:background="@color/primary_color_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:elevation="10dp"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/profile" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/james_smith"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_123456789"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_editwtihbg"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_04"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginVertical="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_calendar"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/joined"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dec_25_2020"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/bold"
+                            android:textColor="@color/primary_color_04"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginVertical="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_expiry"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/expiry"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/medium"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dec"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/medium"
+                            android:textColor="@color/primary_color_04"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_04"/>
+
+            <LinearLayout
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="smithsmith@gmail.com"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/primary_color_04"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_04"/>
+
+            <LinearLayout
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_207_pacific_ave"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/primary_color_04"/>
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:gravity="end"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selkirk"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/primary_color_04"/>
+
+                    <TextView
+                        android:gravity="end"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kdg"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/primary_color_04"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_04"/>
+
+            <LinearLayout
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/riding"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_specified"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/primary_color_04"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_04"/>
+
+            <LinearLayout
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/ppc"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/unnamed" />
+
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oneyearmem"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="@color/Orange_2"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bg_red_stroke"
+        android:fontFamily="@font/medium"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:text="@string/logout"
+        android:textColor="@color/red_01"
+        android:textSize="17sp" />
+
+</RelativeLayout>
