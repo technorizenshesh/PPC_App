@@ -9,6 +9,7 @@ class Constant {
         var PlanId: String = "membershipPlanId"
         var PlanAmount: String = "plan_amount"
         var PlanYears: String = "plan_years"
+        var membership_get: String = "membership"
 
 
         var BaseUrl: String = "http://ec2-3-143-169-211.us-east-2.compute.amazonaws.com/"

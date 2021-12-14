@@ -2,6 +2,7 @@ package com.iratepro.retrofit
 
 import android.content.Context
 import android.net.Uri
+import com.codeinger.ppc_app.model.MemberShipDetailModel
 import com.codeinger.ppc_app.model.MemberShipPlanModel
 import com.codeinger.ppc_app.retrofit.FileUtils
 import okhttp3.MediaType
@@ -52,6 +53,14 @@ interface BackEndApi {
 
     @POST("Membership/CreateMembership")
     fun createMemberShip(@Body body: RequestBody): Call<Object>
+
+
+    @GET("Membership/GetMembershipDetails")
+    fun getMembershipDetail(): Call<MemberShipDetailModel>
+
+
+    @POST("Membership/EditMembership")
+    fun editMemberShipss(@Body body: RequestBody): Call<Object>
 
 
 

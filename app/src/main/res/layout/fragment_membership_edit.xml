@@ -55,6 +55,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etFname"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="10dp"
@@ -89,6 +90,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etLname"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="10dp"
@@ -124,6 +126,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etEmailPri"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -179,6 +182,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etEmail2"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -218,7 +222,7 @@
 
             <TextView
                 android:layout_marginTop="16dp"
-                android:id="@+id/tv_sign_in"
+                android:id="@+id/btnAddEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
@@ -274,6 +278,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etPhonePri"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -330,6 +335,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etPhone2"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -369,6 +375,7 @@
 
 
             <TextView
+                android:id="@+id/btnAddPhone"
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -402,6 +409,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etAddress1"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="10dp"
@@ -437,6 +445,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etAddress2"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="10dp"
@@ -459,7 +468,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:fontFamily="@font/bold"
-                android:text="@string/addressline3"
+                android:text="@string/city"
                 android:textColor="@color/primary_color_01"
                 android:textSize="12sp" />
 
@@ -472,17 +481,55 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etCity"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_address"
+                    android:hint="@string/enter_city"
                     android:layout_gravity="center"
                     android:background="@null"
                     android:fontFamily="@font/regular"
                     android:textSize="17sp"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/Dark_2"/>
+                    android:textColorHint="@color/gray_01"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/province"
+                android:textColor="@color/primary_color_01"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:background="@drawable/bg_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etProvince"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_province"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:textSize="17sp"
+                    android:textColor="@color/Dark_2"
+                    android:textColorHint="@color/gray_01"/>
 
             </LinearLayout>
 
@@ -509,6 +556,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etPostCode"
                     android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
                     android:layout_marginVertical="10dp"

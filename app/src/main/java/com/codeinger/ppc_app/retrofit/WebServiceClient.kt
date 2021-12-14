@@ -1,6 +1,9 @@
 package  com.iratepro.retrofit
 
+import androidx.core.content.ContentProviderCompat.requireContext
 import com.codeinger.ppc_app.retrofit.Constant
+import com.codeinger.ppc_app.utils.SessionManager
+import com.facebook.FacebookSdk.getApplicationContext
 import com.google.gson.GsonBuilder
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -59,7 +62,7 @@ object WebServiceClient {
                             val requestBuilder: Request.Builder = original.newBuilder()
                                     .addHeader("content-type", "application/json")
                                     .addHeader("accept", "text/plain")
-                                    .addHeader(Constant.token, "160aef07-ff0b-4e4d-800c-05b474e76a1a")
+                                    .addHeader(Constant.token, SessionManager.readString( getApplicationContext(),Constant.token,"" ))   // 160aef07-ff0b-4e4d-800c-05b474e76a1a
                             val request: Request = requestBuilder.build()
                             return chain.proceed(request)
                         }

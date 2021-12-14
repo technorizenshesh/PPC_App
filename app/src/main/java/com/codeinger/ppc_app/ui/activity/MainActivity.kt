@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         replace(MyMembershipFragment())
 
         binding.llMyMembership.setOnClickListener {
-            replace(MyMembershipFragment(), "add")
+            replace(MyMembershipFragment())
             binding.drawer.closeDrawer(GravityCompat.START)
         }
 
@@ -67,4 +67,11 @@ class MainActivity : AppCompatActivity() {
     fun settext(string: String) {
         binding.tvTitle.text = string
     }
+
+
+    fun setNavigationText(name: String) {
+        binding.tvProfile.text = name
+    }
+
+
 }
