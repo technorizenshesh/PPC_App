@@ -1,69 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.fragment.membership.MembershipPurchaseFragment">
-
-
-
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
-                android:background="@color/primary_color_01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/primary_color_01"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_marginTop="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_width="120dp"
                     android:layout_height="30sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
                     android:src="@drawable/unnamed" />
 
                 <LinearLayout
-                    android:layout_marginBottom="16dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_marginLeft="16dp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
                         android:layout_weight="1"
+                        android:fontFamily="@font/bold"
                         android:text="3 Year Membership"
                         android:textColor="@color/Orange_2"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/bold"/>
+                        android:textSize="16sp" />
 
                     <TextView
-                        android:layout_marginRight="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/bold"
                         android:text="$24.00"
                         android:textColor="@color/Orange_2"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/bold"/>
+                        android:textSize="16sp" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:layout_marginVertical="24dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
                 android:layout_marginLeft="16dp"
                 android:fontFamily="@font/bold"
                 android:text="Membership Details"
@@ -72,10 +69,10 @@
 
 
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/first_name"
                 android:textColor="@color/primary_color_01"
@@ -83,33 +80,33 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_first_name"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_first_name"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="Last Name"
                 android:textColor="@color/primary_color_01"
@@ -117,38 +114,34 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_last_name"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_last_name"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
-
-
-
-
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/email"
                 android:textColor="@color/primary_color_01"
@@ -156,28 +149,27 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="textEmailAddress"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_email"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_email"
+                    android:inputType="textEmailAddress"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
-
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
 
             </LinearLayout>
@@ -189,31 +181,27 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:checked="true"/>
+                    android:layout_marginHorizontal="16dp"
+                    android:checked="true" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/opt_in_for_ppc_promotional_material"
-                    android:textSize="17sp"
-                    android:textColor="@color/Dark_3"/>
+                    android:textColor="@color/Dark_3"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
-
-
-
-
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/add_line1"
                 android:textColor="@color/primary_color_01"
@@ -221,34 +209,34 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_address"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_address"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/address_line_2"
                 android:textColor="@color/primary_color_01"
@@ -256,34 +244,34 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_address"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_address"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/addressline3"
                 android:textColor="@color/primary_color_01"
@@ -291,35 +279,34 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_address"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_address"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
-
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/postal_code"
                 android:textColor="@color/primary_color_01"
@@ -327,39 +314,35 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:inputType="number"
-                    android:layout_marginHorizontal="16dp"
+                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_postal"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_postal"
+                    android:inputType="number"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
-
-
-
-
-            <TextView
-                android:layout_marginTop="16dp"
+              <TextView
                 android:id="@+id/tv_purchase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_btn"
                 android:fontFamily="@font/bold"
@@ -370,13 +353,10 @@
                 android:textSize="17sp" />
 
 
-
-
         </LinearLayout>
 
 
     </ScrollView>
-
 
 
 </LinearLayout>

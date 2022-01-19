@@ -341,6 +341,7 @@
                             app:cardCornerRadius="4dp">
 
                             <ImageView
+                                android:id="@+id/ivFb"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/fb" />
@@ -355,6 +356,7 @@
                             app:cardCornerRadius="4dp">
 
                             <ImageView
+                                android:id="@+id/ivGoogle"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/google" />

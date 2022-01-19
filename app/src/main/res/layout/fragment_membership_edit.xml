@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.fragment.membership.MembershipEditFragment">
 
-
     <View
-        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/gray_05"/>
-
+        android:layout_marginTop="16dp"
+        android:background="@color/gray_05" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
-                android:layout_marginVertical="32dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="32dp"
                 android:layout_marginLeft="16dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/update_your_contact_details"
@@ -36,10 +34,10 @@
 
 
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/first_name"
                 android:textColor="@color/primary_color_01"
@@ -47,34 +45,34 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etFname"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_first_name"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_first_name"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="Last Name"
                 android:textColor="@color/primary_color_01"
@@ -82,77 +80,79 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etLname"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_last_name"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_last_name"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/primary_email"
                 android:textColor="@color/primary_color_01"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone" />
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
-                android:orientation="horizontal">
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/etEmailPri"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="textEmailAddress"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_primary_email"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_primary_email"
+                    android:inputType="textEmailAddress"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
                 <ImageView
-                    android:layout_marginRight="4dp"
-                    android:layout_gravity="center"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:src="@drawable/ic_vector"/>
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_vector" />
 
                 <TextView
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
                     android:fontFamily="@font/bold"
                     android:text="@string/primary_email"
                     android:textColor="@color/primary_color_01"
@@ -163,10 +163,10 @@
 
 
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/email_2"
                 android:textColor="@color/primary_color_01"
@@ -174,42 +174,43 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etEmail2"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_email"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_email"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="3dp"
                     android:background="@color/primary_color_04"
                     android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:visibility="gone">
 
                     <TextView
-                        android:layout_marginHorizontal="10dp"
-                        android:padding="5dp"
-                        android:layout_marginRight="8dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginRight="8dp"
                         android:fontFamily="@font/bold"
+                        android:padding="5dp"
                         android:text="@string/make_primary"
                         android:textColor="@color/primary_color_01"
                         android:textSize="12sp" />
@@ -219,13 +220,21 @@
 
             </LinearLayout>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_marginTop="16dp"
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+             <TextView
                 android:id="@+id/btnAddEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_stroke"
                 android:fontFamily="@font/bold"
@@ -242,69 +251,71 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:checked="true"/>
+                    android:layout_marginHorizontal="16dp"
+                    android:checked="true" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/opt_in_for_ppc_promotional_material"
-                    android:textSize="17sp"
-                    android:textColor="@color/Dark_3"/>
+                    android:textColor="@color/Dark_3"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/primary_phone"
                 android:textColor="@color/primary_color_01"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone" />
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
-                android:orientation="horizontal">
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/etPhonePri"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_phone_number"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
                     android:background="@null"
-                    android:inputType="number"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="number"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
                 <ImageView
-                    android:layout_marginRight="4dp"
-                    android:layout_gravity="center"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:src="@drawable/ic_vector"/>
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_vector" />
 
                 <TextView
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
                     android:fontFamily="@font/bold"
                     android:text="@string/primary_email"
                     android:textColor="@color/primary_color_01"
@@ -313,13 +324,12 @@
 
             </LinearLayout>
 
-
-
             <TextView
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/phone_2"
                 android:textColor="@color/primary_color_01"
@@ -327,59 +337,67 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etPhone2"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_phone_number"
-                    android:inputType="number"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="number"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="3dp"
                     android:background="@color/primary_color_04"
                     android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:visibility="gone">
 
-                    <TextView
-                        android:layout_marginHorizontal="10dp"
-                        android:padding="5dp"
-                        android:layout_marginRight="8dp"
+                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginRight="8dp"
                         android:fontFamily="@font/bold"
+                        android:padding="5dp"
                         android:text="@string/make_primary"
                         android:textColor="@color/primary_color_01"
                         android:textSize="12sp" />
 
                 </LinearLayout>
 
-
             </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
 
             <TextView
                 android:id="@+id/btnAddPhone"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_stroke"
                 android:fontFamily="@font/bold"
@@ -390,11 +408,11 @@
                 android:textSize="17sp" />
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/add_line1"
                 android:textColor="@color/primary_color_01"
@@ -402,35 +420,35 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etAddress1"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_address"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_address"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/address_line_2"
                 android:textColor="@color/primary_color_01"
@@ -438,35 +456,35 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etAddress2"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_address"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_address"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/city"
                 android:textColor="@color/primary_color_01"
@@ -474,36 +492,35 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etCity"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_city"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_city"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
-
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/province"
                 android:textColor="@color/primary_color_01"
@@ -511,36 +528,35 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etProvince"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_province"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_province"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
 
-
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/bold"
                 android:text="@string/postal_code"
                 android:textColor="@color/primary_color_01"
@@ -548,27 +564,27 @@
 
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/etPostCode"
-                    android:layout_marginHorizontal="16dp"
                     android:layout_width="match_parent"
-                    android:layout_marginVertical="10dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/enter_postal"
                     android:layout_gravity="center"
-                    android:inputType="number"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="10dp"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/enter_postal"
+                    android:inputType="number"
                     android:textColor="@color/Dark_2"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
@@ -579,13 +595,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_marginTop="16dp"
                     android:id="@+id/tv_cancel_changes"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="60dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_stroke"
                     android:fontFamily="@font/bold"
                     android:gravity="center"
@@ -595,13 +611,13 @@
                     android:textSize="17sp" />
 
                 <TextView
-                    android:layout_marginTop="16dp"
                     android:id="@+id/tv_save_details"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_btn"
                     android:fontFamily="@font/bold"
                     android:gravity="center"

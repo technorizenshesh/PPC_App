@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1066732513838",
+    "project_id": "ppcapp-6dbbc",
+    "storage_bucket": "ppcapp-6dbbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066732513838:android:cd8245a709214efa2c8dbf",
+        "android_client_info": {
+          "package_name": "com.codeinger.ppcapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066732513838-csihmtqbcjfr8n4le3lqhqi4pr7rqdtg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codeinger.ppcapp",
+            "certificate_hash": "6190513275cab95d19dfc589af64305d6b3dcf0f"
+          }
+        },
+        {
+          "client_id": "1066732513838-rbi2ipov15ausbhrbmeo7s1vgtldoe9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnDCxsuPNnqlBcXZajXdFE7FOzgRLgYpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066732513838-rbi2ipov15ausbhrbmeo7s1vgtldoe9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

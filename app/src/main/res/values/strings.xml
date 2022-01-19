@@ -4,12 +4,13 @@
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="or_connect_using">Or connect using</string>
-    <!--    welcome-->
+
     <string name="text_welcome">Welcome to the PPC</string>
     <string name="text_welcome_signin_ppc">Sign In to your PPC account</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password1">Forgot Password</string>
     <string name="dont_have_account">Don’t have an account?</string>
     <string name="sign_up_now">Sign Up Now</string>
     <string name="become_part_ppc">Become a PPC Member!</string>
@@ -30,11 +31,11 @@
     <string name="primary_email">Primary Email</string>
     <string name="smithsmith_gmail_com">Smithsmith@gmail.com</string>
     <string name="make_primary">Make Primary</string>
-    <string name="email_2">Email 2</string>
+    <string name="email_2">Email </string>
     <string name="add_new_email">Add New Email</string>
     <string name="opt_in_for_ppc_promotional_material">Opt-in for PPC promotional material</string>
     <string name="primary_phone">Primary Phone</string>
-    <string name="phone_2">Phone 2</string>
+    <string name="phone_2">Phone </string>
     <string name="addnewphone">Add New Phone</string>
     <string name="add_line1">Address Line 1</string>
     <string name="pacific_ave">2017 Pacific Ave</string>
@@ -91,12 +92,18 @@
     <string name="enter_postal">enter postal code</string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="facebook_app_id">261824242160652</string>
-    <string name="fb_login_protocol_scheme">fb261824242160652</string>
+    <string name="googlepay_button_content_description">Google Pay</string>
+    <string name="buy_with_googlepay_button_content_description">Buy with Google Pay</string>
+
+
+    <string name="store_name" translatable="false">Auto T-Shirt Shop</string>
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is not available on this phone.</string>
+    <string name="googlepay_status_checking" translatable="false">Checking if Google Pay is available...</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+
+    <string name="facebook_app_id">456268269167218</string>
+    <string name="fb_login_protocol_scheme">fb456268269167218</string>
     <string name="last_name">Last Name</string>
-
-
-
     <string name="field_required">Field is required</string>
     <string name="wrong_email">Can\'t enter worng email.</string>
     <string name="login_successfully">" Login Successfully"</string>
@@ -108,5 +115,12 @@
     <string name="province">Province</string>
     <string name="enter_province">enter province</string>
     <string name="changed_succesfully">Changed Successfully.</string>
+    <string name="send">Send</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="change_password">Change Password</string>
+    <string name="notification">Notification</string>
+    <string name="contactus">Contact Us </string>
+    <string name="old_password">Old Password</string>
+    <string name="password_do_matched">Password don\'t matched</string>
 
 </resources>

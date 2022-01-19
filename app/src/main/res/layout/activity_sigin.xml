@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -33,24 +32,24 @@
             android:src="@drawable/unnamed" />
 
         <ImageView
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="16dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/back"
             app:tint="@color/white" />
 
     </RelativeLayout>
 
     <com.google.android.material.card.MaterialCardView
-        app:cardElevation="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_top"
+        android:layout_marginHorizontal="24dp"
         android:layout_marginTop="-75dp"
         android:layout_marginBottom="24dp"
-        android:layout_marginHorizontal="24dp"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,15 +57,15 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="73dp">
+                android:layout_height="73dp"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/bold"
                     android:text="@string/sign_in"
                     android:textColor="@color/dark_primary"
@@ -90,85 +89,83 @@
                 android:background="@color/view_gray" />
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_stroke"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_marginVertical="10dp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="10dp"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_mail"
-                    />
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/ic_mail" />
 
                 <EditText
                     android:id="@+id/etEmail"
-                    android:inputType="textEmailAddress"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/email"
-                    android:layout_gravity="center"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/bg_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                  android:orientation="horizontal">
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_marginVertical="10dp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="10dp"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_locked"
-                    />
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/ic_locked" />
 
                 <EditText
                     android:id="@+id/etPassword"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/password"
-                    android:layout_gravity="center"
                     android:background="@null"
                     android:fontFamily="@font/regular"
-                    android:textSize="17sp"
-                    android:textColor="@color/black"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
-                    android:textColorHint="@color/gray_01"/>
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_01"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
             <TextView
-                android:gravity="right"
-                android:textSize="13sp"
                 android:id="@+id/tv_forget_password"
-                android:fontFamily="@font/regular"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="16dp"
-                 android:textColor="@color/primary_color_01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="16dp"
-                android:text="@string/forgot_password" />
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/regular"
+                android:gravity="right"
+                android:text="@string/forgot_password"
+                android:textColor="@color/primary_color_01"
+                android:textSize="13sp" />
 
 
             <TextView
@@ -176,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                 android:layout_marginBottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_btn"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
@@ -187,28 +184,28 @@
 
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:textColor="@color/gray_01"
+                    android:fontFamily="@font/regular"
                     android:text="@string/dont_have_account"
-                    android:fontFamily="@font/regular"/>
+                    android:textColor="@color/gray_01"
+                    android:textSize="13sp" />
 
                 <TextView
-                    android:layout_marginLeft="4dp"
                     android:id="@+id/tv_signup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:textColor="@color/primary_color_01"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/regular"
                     android:text="@string/sign_up_now"
-                    android:fontFamily="@font/regular"/>
+                    android:textColor="@color/primary_color_01"
+                    android:textSize="13sp" />
 
             </LinearLayout>
 
@@ -248,11 +245,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"
-                android:orientation="horizontal">
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
 
                 <androidx.cardview.widget.CardView
@@ -263,7 +261,7 @@
 
                     <ImageView
                         android:id="@+id/iv_Gmail"
-                         android:layout_width="match_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/email" />
 
@@ -282,13 +280,20 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/fb" />
 
-<!--                    <com.facebook.login.widget.LoginButton-->
-<!--                        android:id="@+id/iv_Fb"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_gravity="center_horizontal"-->
-<!--                        android:layout_marginTop="30dp"-->
-<!--                        android:layout_marginBottom="30dp" />-->
+                    <!--      <com.facebook.login.widget.LoginButton
+                              android:id="@+id/login_button"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_horizontal"
+                              android:visibility="gone" />-->
+
+                    <!--                    <com.facebook.login.widget.LoginButton-->
+                    <!--                        android:id="@+id/iv_Fb"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="center_horizontal"-->
+                    <!--                        android:layout_marginTop="30dp"-->
+                    <!--                        android:layout_marginBottom="30dp" />-->
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -304,22 +309,21 @@
                         android:src="@drawable/google" />
 
 
-
                 </androidx.cardview.widget.CardView>
 
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="45dp"-->
-<!--                    android:layout_height="45dp"-->
-<!--                    android:layout_marginRight="40dp"-->
-<!--                    app:cardCornerRadius="4dp">-->
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:layout_width="45dp"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginRight="40dp"-->
+                <!--                    app:cardCornerRadius="4dp">-->
 
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:src="@drawable/iphone" />-->
+                <!--                    <ImageView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:src="@drawable/iphone" />-->
 
 
-<!--                </androidx.cardview.widget.CardView>-->
+                <!--                </androidx.cardview.widget.CardView>-->
 
 
             </LinearLayout>
